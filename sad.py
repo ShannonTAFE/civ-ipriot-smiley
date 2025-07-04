@@ -28,3 +28,5 @@ class Sad(Smiley):
             else:
                 eyes = self.YELLOW
             self.pixels[pixel] = eyes
+
+
