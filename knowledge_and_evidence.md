@@ -265,11 +265,12 @@ Unlike the `Happy` smiley, the current implementation of the `Sad` smiley does n
 
 Include a screenshot of the sad smiley or the modified `main.py`:
 
-![Sad Smiley Blinking](screenshots/sad_blinking.png)
+![Sad Smiley Blinking](screenshots/sad_smiley_blinking.png)
 
 - Observe and document the Sad smiley as it blinks its eyes. Describe any adjustments or issues encountered during implementation.
 
-  > Your answer here
+  > I adjusted the delay of the blink from 0.25 to 0.5 for the sad smiley. I imported time in sad.py. i did not use inheritance
+  > and have given `Sad` its own blink method.
 
   ### 2.8. If It Walks Like a Duck…
 
@@ -277,23 +278,27 @@ Include a screenshot of the sad smiley or the modified `main.py`:
 
   1. **Class Type Analysis:** What kind of class is `Blinkable`? Inspect its superclass for clues about its classification.
 
-     > Your answer here
+     > Blinkable is an abstract class
 
   2. **Class Implementation:** `Blinkable` is a class intended to be implemented by other classes. What generic term describes this kind of class, which is designed for implementation by others? **Clue**: Notice the lack of any concrete implementation and the naming convention.
 
-  > Your answer here
+  > interface. Defines what a class must do
 
   3. **OO Principle Identification:** Regarding your answer to question (2), which Object-Oriented (OO) principle does this represent? Choose from the following and justify your answer in 1-2 sentences: Abstraction, Polymorphism, Inheritance, Encapsulation.
 
-  > Your answer here
+  > Blinkable is using the concept of abstraction as the abstract method is defining what it should do, not how it does it
+  > hiding its details. blink() is defining what the abstract method should do, hiding its abstraction without doing it.
 
   4. **Implementation Flexibility:** Explain why you could grant the Sad Smiley a blinking feature similar to the Happy Smiley's implementation, even without directly using `Blinkable`.
 
-  > Your answer here
+  > Currently Sad isnt inheriting Blinkable so it does not need to pass blink abstract method checks and can implement a
+  > blinking feature with any variable name. 
 
   5. **Concept and Language Specificity:** In relation to your response to question (4), what is this capability known as, and why is it feasible in Python and many other dynamically typed languages but not in most statically typed programming languages like C#? **Clue** This concept is hinted at in the title of this section.
 
-  > Your answer here
+  > Duck typing. Python is a dynamically typed language and allows for objects to based as something by its behaviours rather 
+  > than its declared type. You dont need to declare or inherit from a specific class to be considered 'duck enough'. If an object 
+  > has the methods or behaviours it will be treated as same. 
 
   ***
 
@@ -306,11 +311,12 @@ Include a screenshot of the sad smiley or the modified `main.py`:
   1. **Defined Colors and Their Location:**
 
      1. Which colors are defined and in which class(s)?
-        > Your answer here
+        > White, green, red, yellow, blank is also used for no colour. This is defined in our smiley.py class attributes`Smiley`
      2. What type of variables hold these colors? Are the values expected to change during the program's execution? Explain your answer.
-        > Your answer here
+        > the variables are stored in class attribute variables of WHITE, GREEN, RED, YELLOW individually. Each variable is storing 
+         a tuple of 3 int values that correspond to red, green, blue (RGB). 
      3. Add the color blue to the appropriate class using the appropriate format and values.
-
+        > 
   2. **Usage of Color Variables:**
 
      1. In which classes are the color variables used?
