@@ -25,7 +25,7 @@ class Sad(Smiley):
         eyes = [10, 13, 18, 21]
         for pixel in eyes:
             if wide_open:
-                eyes = self.BLANK
+                eyes = self.BLUE
             else:
                 eyes = self.YELLOW
             self.pixels[pixel] = eyes

@@ -316,15 +316,16 @@ Include a screenshot of the sad smiley or the modified `main.py`:
         > the variables are stored in class attribute variables of WHITE, GREEN, RED, YELLOW individually. Each variable is storing 
          a tuple of 3 int values that correspond to red, green, blue (RGB). 
      3. Add the color blue to the appropriate class using the appropriate format and values.
-        > 
+        > `BLUE = (0, 0, 255)` added to `Smiley` class attributes
   2. **Usage of Color Variables:**
 
      1. In which classes are the color variables used?
-        > Your answer here
+        > implemented blue eyes on `Sad` smiley class.
+        > ![Sad Smiley Blinking Blue](screenshots/sad_blue_eyes.png)
 
   3. **Simple Method to Change Colors:**
   4. What is the easiest way you can think to change the smileys to green? Easiest, not necessarily the best!
-     > Your answer here
+     > Getting green using the RGB model is from changing the tuple value of RGB to (0, 255, 0) as green is the 255 value
 
   Here's a revised version of the "Flexible Colors – Step 1" section for the smiley project, incorporating your specifications for formatting and content updates:
 
