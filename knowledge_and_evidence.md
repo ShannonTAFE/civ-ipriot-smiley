@@ -338,9 +338,11 @@ Include a screenshot of the sad smiley or the modified `main.py`:
   2. **Refactor subclasses to use the `complexion` method:** Modify any subclass that directly accesses the color variable to instead utilize the new `complexion` method. This ensures that color handling is centralized and can be easily modified in the future.
 
   3. **Determine the applicable Object-Oriented principle:** Consider whether Abstraction, Polymorphism, Inheritance, or Encapsulation best applies to the modifications made in this step.
-
+    > Abstraction is used by the complexity() method to hide details. I am abstracting away the colour logic into a complexion()
+    function. Inheritance is also used by subclasses of `Smiley` by being able to inherit the colours and behaviour of this 
+    method and class.
   4. **Verify the implementation:** Ensure that the modifications function as expected. The smileys should still display in yellow, confirming that the new method correctly replaces the direct color references.
-
+    > ![Smiley Complexion](screenshots/complexion.png)
   This step is crucial for setting up a more flexible system for color management in the smiley display logic, allowing for easy adjustments and extensions in the future.
 
   ### 3.3. Flexible Colors – Step 2

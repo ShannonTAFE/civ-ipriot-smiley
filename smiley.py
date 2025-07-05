@@ -41,4 +41,11 @@ class Smiley:
         """
         self.sense_hat.set_pixels(self.pixels)
 
+    def complexion(self):
+        """
+        3.2. Flexible Colors – Step 1
+        Using the term "complexion" instead of "color" provides a more abstract terminology that focuses on the meaning rather than implementation.
+        """
+        return self.YELLOW
+
 
