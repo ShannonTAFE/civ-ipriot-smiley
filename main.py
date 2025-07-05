@@ -8,6 +8,8 @@ from happy import Happy
 
 from sad import Sad
 
+from angry import Angry
+
 
 def main():
     smiley = Happy()
@@ -25,6 +27,14 @@ def main():
     time.sleep(1)
 
     sad.blink()
+
+    angry = Angry()
+
+    angry.show()
+
+    time.sleep(1)
+
+    angry.blink()
 
 if __name__ == '__main__':
     ############################################################
